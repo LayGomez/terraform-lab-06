@@ -1,0 +1,3 @@
+variable "entorno" {
+    type = string
+}

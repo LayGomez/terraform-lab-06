@@ -1,7 +1,7 @@
 module "bucket_logs" {
     source = "./modules/s3-bucket"
 
-    nombre_bucket = "mi-empresa-logs-${var.entorno}"
+    nombre_bucket = "mi-empresa-layla-logs-${var.entorno}"
     entorno = var.entorno
     activar_versionado = false
     activar_cifrado = true
@@ -10,7 +10,7 @@ module "bucket_logs" {
 module "bucket_datos" {
     source = "./modules/s3-bucket"
 
-    nombre_bucket = "mi-empresa-datos-${var.entorno}"
+    nombre_bucket = "mi-empresa.layla-datos-${var.entorno}"
     entorno = var.entorno
     activar_versionado = true
     activar_cifrado = true
